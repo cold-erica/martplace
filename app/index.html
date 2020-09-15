@@ -1,16 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>martplace</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    test
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+  <header class="header">
+    <div class="header__box">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__logo">
+            <a class="header__logo-link" href="#">
+              <img src="images/header-logo.png" alt="logo-martplace">
+            </a>
+          </div>
+          <div class="header__top-items">
+            <div class="header__button">
+              <a href="#">Become a Seller</a>
+            </div>
+            <div class="heder__icon">
+              <a href="#" class="lnr lnr-alarm"></a>
+              <a href="#" class="lnr lnr-envelope"></a>
+              <a href="#" class="lnr lnr-cart"></a>
+            </div>
+            <div class="header__account">
+              <a href="#" class="header__account--photo">
+                <img src="images/user.png" alt="photo">
+              </a>
+              <div class="header__account-info">
+                <a href="#" class="header__account-info--name">
+                  Taofiq Hakim
+                </a>
+                <a href="#" class="header__account-info--money">
+                  $20.45
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__menu">
+          <nav class="nav__menu">
+            <ul class="nav__menu-list">
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">
+                  home
+                </a>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">
+                  all products
+                </a>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">
+                  wordpress
+                </a>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">
+                  festures
+                </a>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">
+                  Pages
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <form action="#" class="header__form">
+            <input class="header__form-search" type="search" placeholder="Search product here...">
+            <button class="header__form-button" type="submit">
+              <span class="lnr lnr-magnifier"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="search">
+      <div class="search__inner">
+        <div class="container">
+          <div class="search__slogan--top">
+            Create Your Own
+          </div>
+          <div class="searh__slogan--bottom">
+            Digital Product Marketplace
+          </div>
+          <div class="search__text">
+            MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+          </div>
+          <div class="search__button">
+            <a href="#" class="search__button--view">
+              View All Products
+            </a>
+            <a href="#" class="search__button--popular">
+              Popular Products
+            </a>
+          </div>
+          <div class="search__form">
+            <div class="search__form-wrapper--top"></div>
+            <div class="search__form-wrapper--bottom"></div>
+            <div class="search__form-wrapper">
+              <form class="search__form-box" action="#">
+                <div class="form__inner">
+                  <input class="search__form-box--text" type="text" placeholder="Search your products..." required>
+                  <select class="search__form-box--categories">
+                    <option>
+                      All Categories
+                    </option>
+                  </select>
+                </div>
+                <button class="search__form-box--button" type="submit">Search Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="features__inner">
+          <a href="#" class="features__title">
+            <img class="features__img" src="images/features1.png" alt="img">
+            <div class="features__caption">
+              Best UX Research
+            </div>
+            <div class="features__text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
+          </a>
+          <a href="#" class="features__title">
+            <img class="features__img" src="images/features2.png" alt="img">
+            <div class="features__caption">
+              Fully Responsive
+            </div>
+            <div class="features__text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
+          </a>
+          <a href="#" class="features__title">
+            <img class="features__img" src="images/features3.png" alt="img">
+            <div class="features__caption">
+              Buy & Sell Easily
+            </div>
+            <div class="features__text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-slider">
+      <div class="container product-slider__container">
+        <div class="product-slider__title">
+          <div class="product-slider__title-text product__title-text">
+            Weekly Featured Products
+          </div>
+          <div class="product-slider__button">
+            <div class="swiper-button-prev">
+              <img src="images/arrow-prev.png" alt="prev">
+            </div>
+            <div class="swiper-button-next">
+              <img src="images/arrow-next.png" alt="next">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="product-slider__inner swiper-slide">
+              <div class="product-slider__item">
+                <a class="product-slider__item-img" href="#">
+                </a>
+                <div class="product-slider__inner-box">
+                  <div class="product-slider__item-caption product__item-caption">
+                    E-commerce Shopping Cart
+                  </div>
+                  <div class="product-slider__item-content product__item-content">
+                    <img class="product-slider__item--user product__item--user" src="images/user.png" alt="photo">
+                    <div class="product-slider__item--name product__item--name">
+                      Theme-Valley
+                    </div>
+                    <a href="#" class="product-slider__item-type product__item-type ">
+                      <img src="images/plugin-icon.png" alt="icon">
+                      Plugin
+                    </a>
+                  </div>
+                  <div class="product-slider__item-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                    quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                    mattis, leo quam aliquet congue justo ut scelerisque.
+                  </div>
+                  <div class="product-slider__item-button">
+                    <button class="product-slider__item-button--website">
+                      website
+                    </button>
+                    <button class="product-slider__item-button--plugin">
+                      plugin
+                    </button>
+                    <button class="product-slider__item-button--landing">
+                      landing page
+                    </button>
+                  </div>
+                  <div class="product-slider__item-info">
+                    <div class="product-slider__item-price">
+                      $10-$50
+                    </div>
+                    <div class="product-slider__item-like product__item-like">
+                      <span class="lnr lnr-heart"></span>
+                      46
+                    </div>
+                    <div class="product-slider__item-basket product__item-basket">
+                      <span class="lnr lnr-cart"></span>
+                      634
+                    </div>
+                    <div class="product-slider__item-star">
+                      <div class="rate-star"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="release">
+      <div class="container">
+        <div class="release__title">
+          <div class="release__title-text">
+            Newest Release Products
+          </div>
+          <div class="release__title-filter">
+            <span class="release__title-filter--text">
+              Filter by:
+            </span>
+            <img class="release__title-filter--button" src="images/togle.svg" alt="button">
+            <div class="release__title-menu">
+              <a href="#">
+                Trending items
+              </a>
+              <a href="#">
+                Best seller
+              </a>
+              <a href="#">
+                Best rating
+              </a>
+              <a href="#">
+                Low price
+              </a>
+              <a href="#">
+                High price
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="release__inner">
+          <div class="release__inner-btn">
+            <button type="button" data-filter=".category-plugins">Plugins</button>
+            <button type="button" data-filter=".category-wordpress">WordPress</button>
+            <button type="button" data-filter=".category-site">Site Template</button>
+            <button type="button" data-filter=".category-psd">
+              <span class="uppercase">psd</span>
+              Template
+            </button>
+            <button type="button" data-filter=".category-joomla">Joomla</button>
+            <button type="button" data-filter=".category-user">User Interface</button>
+            <button type="button" data-filter=".category-landing">Landing Page</button>
+            <button type="button" data-filter="category-.software">Software</button>
+          </div>
+          <div class="product__inner-box">
+            <div class="product__item mix category-plugins all" data-order="1">
+              <a class="product__item-img " href="#">
+              </a>
+              <div class="product__item-link">
+                <a class="product__item-link--info" href="#">More Info</a>
+                <a class="product__item-link--demo" href="#">Live Demo</a>
+              </div>
+              <div class="product__item-caption">
+                E-commerce Shopping Cart
+              </div>
+              <div class="product__item-content">
+                <img class="product__item--user" src="images/user.png" alt="photo">
+                <div class="product__item--name">
+                  Theme-Valley
+                </div>
+                <a href="#" class="product__item-type">
+                  <img src="images/plugin-icon.png" alt="icon">
+                  Plugin
+                </a>
+              </div>
+              <div class="product__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">
+                  $20
+                </div>
+                <div class="product__item-like">
+                  <span class="lnr lnr-heart"></span>
+                  90
+                </div>
+                <div class="product__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  246
+                </div>
+              </div>
+            </div>
+            <div class="product__item mix category-psd all" data-order="2">
+              <a class="product__item-img " href="#">
+              </a>
+              <div class="product__item-link">
+                <a class="product__item-link--info" href="#">More Info</a>
+                <a class="product__item-link--demo" href="#">Live Demo</a>
+              </div>
+              <div class="product__item-caption">
+                Marketify Coffee Shop
+              </div>
+              <div class="product__item-content">
+                <img class="product__item--user" src="images/user.png" alt="photo">
+                <div class="product__item--name">
+                  EchoTheme
+                </div>
+                <a href="#" class="product__item-type uppercase">
+                  <img src="images/psd-icon.png" alt="icon">
+                  psd
+                </a>
+              </div>
+              <div class="product__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">
+                  $18
+                </div>
+                <div class="product__item-like">
+                  <span class="lnr lnr-heart"></span>
+                  48
+                </div>
+                <div class="product__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  50
+                </div>
+              </div>
+            </div>
+            <div class="product__item mix category-html all" data-order="3">
+              <a class="product__item-img " href="#">
+              </a>
+              <div class="product__item-link">
+                <a class="product__item-link--info" href="#">More Info</a>
+                <a class="product__item-link--demo" href="#">Live Demo</a>
+              </div>
+              <div class="product__item-caption">
+                Bryson - Portfolio Template
+              </div>
+              <div class="product__item-content">
+                <img class="product__item--user" src="images/user.png" alt="photo">
+                <div class="product__item--name">
+                  Artcorner
+                </div>
+                <a href="#" class="product__item-type uppercase">
+                  <img src="images/html-icon.png" alt="icon">
+                  html
+                </a>
+              </div>
+              <div class="product__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">
+                  $10
+                </div>
+                <div class="product__item-like">
+                  <span class="lnr lnr-heart"></span>
+                  56
+                </div>
+                <div class="product__item-star">
+                  <div class="rate-star"></div>
+                </div>
+                <div class="product__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  68
+                </div>
+              </div>
+            </div>
+            <div class="product__item mix category-plugins all" data-order="4">
+              <a class="product__item-img " href="#">
+              </a>
+              <div class="product__item-link">
+                <a class="product__item-link--info" href="#">More Info</a>
+                <a class="product__item-link--demo" href="#">Live Demo</a>
+              </div>
+              <div class="product__item-caption">
+                E-commerce Shopping Cart
+              </div>
+              <div class="product__item-content">
+                <img class="product__item--user" src="images/user.png" alt="photo">
+                <div class="product__item--name">
+                  Design-Hub
+                </div>
+                <a href="#" class="product__item-type">
+                  <img src="images/plugin-icon.png" alt="icon">
+                  Plugin
+                </a>
+              </div>
+              <div class="product__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">
+                  $10-50
+                </div>
+                <div class="product__item-like">
+                  <span class="lnr lnr-heart"></span>
+                  90
+                </div>
+                <div class="product__item-star">
+                  <div class="rate-star"></div>
+                </div>
+                <div class="product__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  45
+                </div>
+              </div>
+            </div>
+            <div class="product__item mix category-psd all" data-order="5">
+              <a class="product__item-img " href="#">
+              </a>
+              <div class="product__item-link">
+                <a class="product__item-link--info" href="#">More Info</a>
+                <a class="product__item-link--demo" href="#">Live Demo</a>
+              </div>
+              <div class="product__item-caption">
+                Marketify Coffee Shop
+              </div>
+              <div class="product__item-content">
+                <img class="product__item--user" src="images/user.png" alt="photo">
+                <div class="product__item--name">
+                  AazzTech
+                </div>
+                <a href="#" class="product__item-type uppercase">
+                  <img src="images/psd-icon.png" alt="icon">
+                  psd
+                </a>
+              </div>
+              <div class="product__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">
+                  $10-50
+                </div>
+                <div class="product__item-like">
+                  <span class="lnr lnr-heart"></span>
+                  18
+                </div>
+                <div class="product__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  45
+                </div>
+              </div>
+            </div>
+            <div class="product__item mix category-html all" data-order="6">
+              <a class="product__item-img " href="#">
+              </a>
+              <div class="product__item-link">
+                <a class="product__item-link--info" href="#">More Info</a>
+                <a class="product__item-link--demo" href="#">Live Demo</a>
+              </div>
+              <div class="product__item-caption">
+                Bryson - Portfolio Template
+              </div>
+              <div class="product__item-content">
+                <img class="product__item--user" src="images/user.png" alt="photo">
+                <div class="product__item--name">
+                  Coder-Lab
+                </div>
+                <a href="#" class="product__item-type uppercase">
+                  <img src="images/html-icon.png" alt="icon">
+                  html
+                </a>
+              </div>
+              <div class="product__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">
+                  $10
+                </div>
+                <div class="product__item-like">
+                  <span class="lnr lnr-heart"></span>
+                  56
+                </div>
+                <div class="product__item-star">
+                  <div class="rate-star"></div>
+                </div>
+                <div class="product__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  68
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="release__bottom-btn">
+          <button type="button" data-filter="all">
+            All New Products
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

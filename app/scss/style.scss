@@ -1,6 +1,7 @@
 @import "vars";
 @import "global";
 
+// header start
 .header__box {
   height: 100px;
   background-color: #eef1f3;
@@ -108,6 +109,10 @@
   margin-left: 20px;
 }
 
+.header__account-info--name {
+  color: #333333;
+}
+
 .header__account--photo {
   width: 50px;
   height: 50px;
@@ -115,7 +120,7 @@
   background-position: center;
 }
 
-.header__account-info--money {
+.header__account-info--price {
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
@@ -153,7 +158,7 @@
   justify-content: space-between;
   width: 358px;
   height: 44px;
-  border: 1px solid rgb(217, 223, 229);
+  border: 1px solid #d9dfe5;
   border-radius: 35px;
 }
 
@@ -183,6 +188,9 @@
   outline: none;
   cursor: pointer;
 }
+// header end
+
+// search start
 
 .search__inner {
   background-image: linear-gradient(270deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);
@@ -216,19 +224,13 @@
   font-size: 16px;
   text-align: center;
   margin-bottom: 235px;
+  button {
+    margin-right: 30px;
+  }
 }
 
+.search__button--popular,
 .search__button--view {
-  width: 190px;
-  color: $color-blue;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 45px;
-  margin-right: 30px;
-  padding: 22px 0;
-}
-
-.search__button--popular {
   width: 190px;
   color: #ffffff;
   background-color: transparent;
@@ -236,6 +238,15 @@
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
   border-radius: 45px;
   padding: 22px 0;
+  transition: 0.5s;
+}
+
+.search__button--view:hover,
+.search__button--popular:hover {
+  color: $color-blue;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+  transition: 1s;
 }
 
 .search__form {
@@ -254,7 +265,7 @@
   width: 1140px;
   height: 135px;
   border-radius: 6px;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 }
 
@@ -265,7 +276,7 @@
   width: 1110px;
   height: 135px;
   border-radius: 6px;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   opacity: 0.502;
 }
 
@@ -274,7 +285,7 @@
   top: -98px;
   z-index: 1;
   border-radius: 6px;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   opacity: 0.502;
   width: 1080px;
   height: 135px;
@@ -286,7 +297,7 @@
   width: 805px;
   height: 53px;
   border-radius: 4px;
-  border: 1px solid rgb(220, 220, 220);
+  border: 1px solid $color-border;
   margin-left: 40px;
   margin-right: 30px;
 }
@@ -307,17 +318,17 @@
 }
 
 .search__form-box--text::placeholder {
-  color: #676767;
+  color: $color-border;
 }
 
 .search__form-box--categories {
   font-size: 16px;
   font-weight: 400;
-  color: #555555;
+  color: $color-grey;
   width: 195px;
   height: 51px;
   border: none;
-  border-left: 1px solid rgb(220, 220, 220);
+  border-left: 1px solid $color-border;
   outline: none;
   text-align: center;
   padding-left: 22px;
@@ -333,6 +344,9 @@
   background-color: $color-blue;
   cursor: pointer;
 }
+// search end
+
+// features start
 
 .features__inner {
   display: flex;
@@ -345,7 +359,7 @@
   min-height: 403px;
   text-align: center;
   border-radius: 4px;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   margin-top: 184px;
   margin-bottom: 104px;
   &:hover {
@@ -367,10 +381,11 @@
 .features__text {
   font-size: 16px;
   line-height: 30px;
-  color: #555555;
+  color: $color-grey;
   margin-top: 26px;
   margin-bottom: 48px;
 }
+// features end
 
 // start product-slider
 
@@ -447,7 +462,7 @@
   font-size: 16px;
   font-weight: 400;
   min-height: 144px;
-  color: #555555;
+  color: $color-grey;
   padding: 33px 30px 10px;
 }
 
@@ -471,19 +486,29 @@
 .product-slider__item-info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-top: 15px;
+  .rate-star {
+    margin-right: 50px;
+  }
+}
+
+.product-slider__item-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product-slider__item-price {
   width: 102px;
   height: 30px;
   font-weight: bold;
+  line-height: 30px;
   text-align: center;
   font-size: 15px;
   color: #ffffff ;
   background-color: $color-blue;
   border-radius: 45px;
-  padding-top: 5px;
   margin-left: 30px;
 }
 // end product-slider
@@ -500,7 +525,7 @@
   align-items: center;
   max-width: 1140px;
   height: 110px;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   background-position: center;
   border-radius: 4px;
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
@@ -516,6 +541,7 @@
 .release__title-filter {
   display: flex;
   position: relative;
+  padding: 20px 0px 20px 25px;
   cursor: pointer;
 }
 
@@ -539,7 +565,7 @@
 
 .release__title-menu {
   position: absolute;
-  top: 45px;
+  top: 60px;
   right: 8px;
   display: flex;
   display: none;
@@ -623,7 +649,7 @@
   transition: 0.5s;
 }
 
-.product__item:hover {
+.product__item--top:hover {
   .product__item-img {
     background-image: linear-gradient(270deg, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 100%);
     transition: 1s;
@@ -710,7 +736,7 @@
   font-size: 16px;
   font-weight: 400;
   min-height: 144px;
-  color: #555555;
+  color: $color-grey;
   border-bottom: 1px solid rgb(236, 236, 236);
   padding: 33px 30px 10px;
 }
@@ -718,20 +744,24 @@
 .product__item-info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-top: 18px;
   padding-bottom: 18px;
+  .lnr-cart {
+    margin-right: 30px;
+    margin-left: 5px;
+  }
 }
-
 .product__item-price {
   width: 60px;
   height: 30px;
   font-weight: bold;
+  line-height: 30px;
   text-align: center;
   font-size: 15px;
   color: $color-blue;
   background-color: #e6f1fd;
   border-radius: 44px;
-  padding: 5px 0;
   margin-left: 30px;
 }
 
@@ -761,7 +791,7 @@
   button {
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: #ffffff;
     background-color: $color-blue;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
     border: none;
@@ -772,4 +802,18 @@
     cursor: pointer;
   }
 }
+
 // end release
+
+// follovers start
+.followers {
+  background-color: #eff1f5;
+}
+
+.Followers__title-text {
+  font-size: 30px;
+  font-weight: 400px;
+  margin-left: 32px;
+}
+
+// follovers end

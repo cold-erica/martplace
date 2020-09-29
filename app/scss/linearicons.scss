@@ -10,7 +10,7 @@
 	font-style: normal;
 }
 
-.lnr {
+[class*="lnr-"]::before{
 	font-family: 'Linearicons-Free';
 	speak: none;
 	font-style: normal;

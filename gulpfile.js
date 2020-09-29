@@ -11,8 +11,8 @@ const { version } = require('os');
 const { css } = require('jquery');
 
 gulp.task('sass', function(){
-    return gulp.src('app/scss/**/*.scss')
-            .pipe(sass({outputStyle:'compressed'}))
+    return gulp.src('app/scss/style.scss')
+            .pipe(sass.sync({outputStyle:'compressed'}))
             .pipe(rename({suffix : '.min'}))
             .pipe(autoprefixer({
                 overrideBrowserslist: ['last 8 version']

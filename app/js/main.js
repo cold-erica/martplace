@@ -20,18 +20,20 @@ $(function () {
         slidesPerView: 3,
         spaceBetween: 30,
         loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
+        centeredSlides: true,
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        // },
 
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+
     });
 
-    var mySwiper2 = new Swiper('.testimonial__slider', {
+    var mySwiper3 = new Swiper('.testimonial__slider', {
         direction: 'horizontal',
         slidesPerView: 2,
         spaceBetween: 30,
@@ -45,6 +47,7 @@ $(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        
     });
 
     $(".rate-star").rateYo({
@@ -54,6 +57,32 @@ $(function () {
         readOnly: true
     });
     
-
-
+    $(".header__menu-button").on("click",function(){
+        $(".nav .nav__list").slideToggle();
+    });
+    $(".nav__link-home").on("click",function(){
+        $(".drop-menu__home").slideToggle();
+    });
+    $(".nav__link-products").on("click",function(){
+        $(".drop-menu__products").slideToggle();
+    });
+    $(".nav__link-wordpress").on("click",function(){
+        $(".drop-menu__wordpress").slideToggle();
+    });
+    $(".header__account").on("click",function(){
+        $(".drop-menu__account").slideToggle();
+    });
+    $(".menu__alarm").on("click",function(){
+        $(".drop-menu__alarm").slideToggle();
+    });
+    $(".menu__mail").on("click",function(){
+        $(".drop-menu__messages").slideToggle();
+    });
+    $(".menu__cart").on("click",function(){
+        $(".drop-menu__cart").slideToggle();
+    });
+    $(".menu__pages").on("click",function(){
+        $(".drop-menu__pages").slideToggle();
+    });
+    
 });

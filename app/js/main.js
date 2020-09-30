@@ -50,9 +50,10 @@ $(function () {
         
     });
 
+
     $(".rate-star").rateYo({
         rating: 4.5,
-        starWidth: "17px",
+        starWidth: "16px",
         normalFill: "#ffffff",
         readOnly: true
     });

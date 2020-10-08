@@ -1,0 +1,123 @@
+// testimonial start
+.testimonial {
+    &__title {
+      max-width: 555px;
+      height: 315px;
+      border-left: $color-blue solid 2px;
+      border-radius: 4px;
+      box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+    }
+    &__user {
+      display: flex;
+      align-items: center;
+      margin: 0 40px 22px;
+    }
+    &__photo {
+      max-width: 85px;
+      max-height: 85px;
+      margin: 50px 20px 0 0;
+    }
+  
+    &__name {
+      font-family: "Quicksand";
+      font-weight: 700;
+      font-size: 20px;
+      color: #000000;
+      margin-bottom: 18px;
+      margin-top: 50px;
+      transition: 1s;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-violet;
+        transition: 1s;
+      }
+    }
+    &__info {
+      font-size: 16px;
+      color: $color-grey;
+      transition: 0.5s;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-violet;
+        transition: 1s;
+      }
+    }
+    &__icons {
+      font-size: 60px;
+      color: #e8e8e8;
+      margin-top: 40px;
+      margin-left: 170px;
+      transition: 1s;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-violet;
+        transition: 1s;
+      }
+    }
+    &__title-text {
+      font-size: 16px;
+      line-height: 30px;
+      color: $color-grey;
+      margin: 0 40px 10px;
+      overflow: hidden;
+    }
+    &__btn {
+      display: block;
+      font-size: 16px;
+      padding: 19px 25px;
+      color: #ffffff;
+      background-color: $color-blue;
+      margin: 29px auto 120px;
+      transition: 0.5s;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: #fff;
+        border: 1px solid $color-blue;
+        color: $color-violet;
+        transition: 1s;
+      }
+    }
+    &__container {
+      position: relative;
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        display: none;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: absolute;
+        width: 53px;
+        height: 53px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        border: none;
+        transition: 1s;
+        &:hover,
+        &:active,
+        &:focus {
+          border: 1px solid $color-blue;
+          transition: 1s;
+        }
+      }
+      .swiper-button-prev {
+        left: -10px;
+      }
+      .swiper-button-next {
+        right: -10px;
+      }
+    }
+    .testimonial__wrapper {
+      display: none;
+      .testimonial__title {
+        margin: 25px auto;
+      }
+    }
+  }
+  // testimonial end
+  

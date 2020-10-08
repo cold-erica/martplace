@@ -1,0 +1,53 @@
+// statistic start
+.statistic {
+    background-color: #212225;
+    padding: 88px 0;
+    &__title {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__briefcase {
+      .lnr-briefcase,
+      .statistic__number {
+        color: #feb71d;
+      }
+    }
+    &__download {
+      .lnr-cloud-download,
+      .statistic__number {
+        color: #58c9e9;
+      }
+    }
+    &__smile {
+      .lnr-smile,
+      .statistic__number {
+        color: #77de51;
+      }
+    }
+    &__users {
+      .lnr-users,
+      .statistic__number {
+        color: #ff6a6d;
+      }
+    }
+    &__box {
+      text-align: center;
+      max-width: 200px;
+      .lnr {
+        font-size: 48px;
+        margin-bottom: 40px;
+      }
+    }
+    &__number {
+      font-size: 36px;
+      margin-bottom: 3px;
+    }
+  
+    &__text {
+      font-size: 18px;
+      line-height: 36px;
+      color: #ffffff;
+    }
+  }
+  // statistic end

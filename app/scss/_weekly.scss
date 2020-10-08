@@ -1,0 +1,231 @@
+// start weekly
+.weekly {
+    background-color: #eff1f5;
+    &__container {
+      padding-top: 125px;
+      padding-bottom: 120px;
+    }
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 4px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+      max-width: 1140px;
+      height: 110px;
+      margin-bottom: 50px;
+      padding: 0 30px;
+      &-text {
+        font-size: 30px;
+      }
+    }
+    &__button {
+      position: relative;
+      width: 110px;
+      height: 45px;
+      background-color: $color-violet;
+      border-radius: 45px;
+      .swiper-button-prev,
+      .swiper-button-next {
+        top: 22px;
+        width: 55px;
+        height: 45px;
+        background-color: $color-violet;
+        border: none;
+        border-radius: 45%;
+        color: #ffffff;
+        transition: 1s;
+        &:hover {
+          background-color: $color-blue;
+          color: $color-violet;
+          transition: 1s;
+        }
+        :active {
+          background-color: $color-blue;
+          color: $color-violet;
+          transition: 1s;
+        }
+        :focus {
+          background-color: $color-blue;
+          color: $color-violet;
+          transition: 1s;
+        }
+      }
+      .swiper-button-prev {
+        left: 0;
+      }
+      .swiper-button-next {
+        right: 0;
+      }
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        display: none;
+      }
+      .swiper-button--img {
+        width: 7px;
+        height: 14px;
+      }
+    }
+    &__item {
+      display: flex;
+      &-img {
+        position: relative;
+        min-width: 555px;
+        height: 450px;
+      }
+    }
+    &__item--name {
+      transition: 1s;
+    }
+    &__inner-box {
+      background-color: #fff;
+      padding-left: 20px;
+    }
+    &__item-caption {
+      font-size: 24px;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 500;
+      margin-top: 47px;
+      margin-left: 30px;
+    }
+    &__item-text {
+      font-size: 16px;
+      line-height: 30px;
+      height: 144px;
+      overflow: hidden;
+      color: $color-grey;
+      padding: 26px 30px 10px;
+    }
+    &__item-button {
+      border-bottom: 1px solid rgb(236, 236, 236);
+      margin-right: 54px;
+      margin-left: 30px;
+      .product-button {
+        color: #868c96;
+        background-color: #f1f3f6;
+        border-radius: 45px;
+        border: none;
+        margin-right: 9px;
+        margin-bottom: 40px;
+        padding: 9px 15px 8px 17px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          background-color: $color-blue;
+          color: $color-violet;
+          transition: 1s;
+        }
+        &:active {
+          background-color: $color-blue;
+          color: $color-violet;
+          transition: 1s;
+        }
+        &:focus {
+          background-color: $color-blue;
+          color: $color-violet;
+          transition: 1s;
+        }
+      }
+    }
+    &__item-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 22px;
+    }
+    &__item-basket {
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        color: $color-violet;
+        transition: 0.5s;
+      }
+    }
+    &__item-price {
+      width: 102px;
+      height: 30px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: center;
+      font-size: 15px;
+      color: #ffffff;
+      background-color: $color-blue;
+      border-radius: 45px;
+      margin-left: 30px;
+    }
+    .rate-star {
+      margin-right: 50px;
+    }
+    &__item-like {
+      font-size: 15px;
+      color: #6f7d8d;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      .lnr-heart {
+        color: $color-violet;
+        margin-right: 8px;
+        margin-left: 14px;
+      }
+      &:hover {
+        color: $color-blue;
+        transition: 0.5s;
+      }
+    }
+    .hover__link {
+      display: none;
+      position: relative;
+      text-align: center;
+      a {
+        position: absolute;
+        font-size: 15px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        text-align: center;
+        color: #ffffff;
+        width: 130px;
+        background-color: transparent;
+        border: 1px solid rgb(244, 244, 244);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 45px;
+      }
+    }
+    .hover--info {
+      left: -450px;
+      bottom: 200px;
+      padding: 15px 20px;
+      transition: 0.5s;
+    }
+    .hover--demo {
+      left: -268px;
+      bottom: 200px;
+      padding: 15px 20px;
+      transition: 0.5s;
+    }
+    .hover--info:hover,
+    .hover--demo:hover {
+      background-color: #fff;
+      color: $color-blue;
+      transition: 1s;
+    }
+    .hover:hover {
+      .weekly__item-img::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        background: linear-gradient(270deg, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 100%);
+        opacity: 0.902;
+        transition: 1s;
+      }
+      .hover__link {
+        display: block;
+      }
+    }
+  }
+  // end weekly

@@ -1,0 +1,47 @@
+// support start
+.support {
+    &__inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 570px;
+      margin: 60px 0;
+    }
+    &__img {
+      width: 155px;
+      height: 125px;
+      margin: 0 auto 25px;
+    }
+    .link__guarantee {
+      font-size: 24px;
+      color: #000000;
+      margin: 0 auto;
+      transition: 0.5s;
+      span {
+        color: $color-blue;
+      }
+      &:hover {
+        transition: 0.5s;
+        color: $color-blue;
+      }
+    }
+    .link__support {
+      font-size: 24px;
+      color: #000000;
+      margin: 0 auto;
+      transition: 0.5s;
+      span {
+        color: $color-violet;
+      }
+      &:hover {
+        color: $color-violet;
+        transition: 0.5s;
+      }
+    }
+  }
+  // support end

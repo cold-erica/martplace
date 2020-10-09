@@ -1,0 +1,51 @@
+// works
+.works {
+  &__wrapper--grey {
+    background-color: #eff1f5;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 95px 15px;
+  }
+  &__content {
+    max-width: 490px;
+    padding: 0 10px;
+  }
+  &__caption {
+    font-size: 30px;
+    padding: 35px 0;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $color-grey;
+  }
+  &__link {
+    color: $color-blue;
+    border-radius: 45px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    margin-top: 30px;
+    transition: 0.5s;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fff;
+      background-color: $color-blue;
+      transition: 0.5s;
+    }
+  }
+  &__link--creat {
+    padding: 18px 33px;
+  }
+  &__link--upload {
+    padding: 18px 35px;
+  }
+  &__link--start {
+    padding: 18px 25px;
+  }
+}

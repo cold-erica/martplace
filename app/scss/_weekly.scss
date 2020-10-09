@@ -106,8 +106,8 @@
         background-color: #f1f3f6;
         border-radius: 45px;
         border: none;
+        margin-bottom: 10px;
         margin-right: 9px;
-        margin-bottom: 40px;
         padding: 9px 15px 8px 17px;
         cursor: pointer;
         transition: 0.5s;
@@ -132,7 +132,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-top: 22px;
+      margin-top: 10px;
     }
     &__item-basket {
       cursor: pointer;

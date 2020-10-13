@@ -16,6 +16,8 @@
   &__img {
     max-width: 750px;
     height: 430px;
+    background-position: center;
+    background-size: cover;
   }
   &__btn {
     display: flex;
@@ -89,6 +91,8 @@
   &__menu-img {
     max-width: 690px;
     height: 1000px;
+    background-position: center;
+    background-size: cover;
   }
   &__list-ordered {
     counter-reset: num;

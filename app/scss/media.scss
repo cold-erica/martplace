@@ -100,11 +100,18 @@
       .product__items {
         margin: 20px;
       }
-     .product__box {
-       clear: both;
-       margin-top: 180px;
-     }
+      .product__box {
+        clear: both;
+        margin-top: 180px;
+      }
     }
+  }
+  .pricing-plan__box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .single-product__inner {
+    justify-content: center;
   }
 }
 
@@ -226,11 +233,48 @@
   .filter .filter__wrapper {
     flex-direction: column;
   }
-  .product-page .pagination__list .link {
+  .pagination__list .link {
     width: 30px;
   }
-  .product-page .pagination {
+  .pagination {
     justify-content: end;
+  }
+  .contact-form__row {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-form__info {
+    width: 95%;
+    margin-bottom: 15px;
+  }
+  .contact-form__text {
+    width: 95%;
+  }
+  .blog-page__wrapper {
+    justify-content: center;
+  }
+  .blog-page__title {
+    margin-right: 0;
+  }
+  .blog-page__banner {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .blog-page__aside {
+    width: 100%;
+  }
+  .blog-page__form {
+    width: 100%;
+  }
+  .blog-page__popular {
+    width: 100%;
+  }
+  .works__box {
+    justify-content: center;
+  }
+  .works__link--upload {
+    margin-bottom: 30px;
   }
 }
 
@@ -267,7 +311,6 @@
       flex-direction: column;
     }
   }
- 
 }
 
 @media (max-width: 768px) {
@@ -295,7 +338,6 @@
   }
   .filter .filter__form {
     flex-direction: column;
-    
   }
   .filter .form__price {
     margin-bottom: 20px;
@@ -309,6 +351,17 @@
   .product-page .container-product-page {
     flex-wrap: wrap;
     align-items: center;
+  }
+  .pricing-plan__box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-plan__title {
+    width: 100%;
+    text-align: center;
+  }
+  .product__inner-box {
+    justify-content: center;
   }
 }
 
@@ -450,5 +503,46 @@
       width: 160px;
     }
   }
-  
+  .contact-form__box {
+    align-items: center;
+  }
+  .contact-form__info--grey {
+    width: 100%;
+  }
+  .blog-page__form-button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  .blog-page__form-title {
+    width: 100%;
+    flex-direction: column;
+  }
+  .blog-page__form {
+    padding-bottom: 100px;
+  }
+  .blog-page__name {
+    padding: 25px;
+  }
+  .works__box {
+    img {
+      width: 100%;
+    }
+  }
+  .single-product__content {
+    width: 100%;
+  }
+  .tabs {
+    flex-direction: column;
+  }
+  .single-product__aside {
+    width: 100%;
+  }
+  .single-product__aside-box {
+    width: 100%;
+    margin-left: 0;
+    .btn {
+      width: 200px;
+    }
+  }
 }

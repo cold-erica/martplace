@@ -1,0 +1,58 @@
+// sell start
+.sell {
+    background-image: url(../images/bg_sell.jpg);
+    color: #ffffff;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 88px;
+    &-box {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 100px;
+    }
+    &-title {
+      max-width: 602px;
+      padding: 0 10px;
+    }
+    &__link {
+      margin-bottom: 48px;
+    }
+    &__caption {
+      font-size: 36px;
+      line-height: 30px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 21px;
+      margin-bottom: 44px;
+    }
+    &__btn-left {
+      color: $color-blue;
+    }
+    &__btn-right {
+      color: $color-violet;
+    }
+    &__btn-left,
+    &__btn-right {
+      padding: 19px 26px;
+      margin-bottom: 98px;
+      transition: 0.5s;
+      &:hover {
+        background-color: #76aae0;
+        color: $color-violet;
+        transition: 1s;
+      }
+      :active {
+        color: $color-violet;
+        transition: 1s;
+      }
+      :focus {
+        color: $color-violet;
+        transition: 1s;
+      }
+    }
+  }
+  // sell end

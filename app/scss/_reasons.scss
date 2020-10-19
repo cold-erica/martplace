@@ -1,0 +1,99 @@
+// reasons start
+.reasons {
+    &__caption {
+      text-align: center;
+      font-size: 36px;
+      font-weight: normal;
+      margin-top: 110px;
+      span {
+        color: $color-blue;
+      }
+    }
+    &__text {
+      max-width: 680px;
+      font-size: 16px;
+      line-height: 30px;
+      color: $color-grey;
+      text-align: center;
+      margin: 21px auto 60px;
+    }
+    &__box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__title {
+      position: relative;
+      max-width: 361px;
+      min-height: 373px;
+      text-align: center;
+      border-radius: 4px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+      margin-right: 10px;
+      margin-bottom: 30px;
+      padding: 10px;
+      transition: 1s;
+      &:hover,
+      &:active,
+      &:focus {
+        border: 1px solid $color-blue;
+        transition: 1s;
+      }
+      .lnr-license {
+        color: $color-blue;
+      }
+      .lnr-magic-wand {
+        color: #7f4ec2;
+      }
+      .lnr-lock {
+        color: #77de51;
+      }
+      .lnr-chart-bars {
+        color: #feb71d;
+      }
+      .lnr-leaf {
+        color: #58c9e9;
+      }
+      .lnr-phone {
+        color: #ff6a6d;
+      }
+      .lnr-license,
+      .lnr-chart-bars,
+      .lnr-phone,
+      .lnr-lock {
+        font-size: 60px;
+        margin-top: 35px;
+        margin-bottom: 37px;
+      }
+      .lnr-leaf,
+      .lnr-magic-wand {
+        font-size: 60px;
+        margin-top: 25px;
+        margin-bottom: 50px;
+      }
+    }
+    &__title--caption {
+      font-size: 24px;
+      color: #000000;
+      margin-bottom: 22px;
+    }
+    &__title--text {
+      font-size: 16px;
+      line-height: 30px;
+      color: $color-grey;
+    }
+  }
+  @for $i from 1 through 6 {
+    .reasons__number-#{$i}::before {
+      content: " ";
+      position: absolute;
+      top: 14px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/reason#{$i}.png);
+      background-repeat: no-repeat;
+    }
+  }
+  // reasons end

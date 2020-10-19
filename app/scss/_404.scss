@@ -1,0 +1,33 @@
+// page-404
+.page-404 {
+  &__wrapper {
+    text-align: center;
+    padding-top: 80px;
+  }
+  &__img {
+    width: 393px;
+    height: 447px;
+    margin-bottom: 50px;
+  }
+  &__text {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  &__link  {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: $color-blue;
+    border-radius: 45px;
+    padding: 18px 45px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-404__img {
+    width: 100%;
+  }
+}
+
+

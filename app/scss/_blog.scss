@@ -1,0 +1,50 @@
+// start blog
+.blog {
+    background-color: #eff1f5;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    .product__caption {
+      font-size: 22px;
+    }
+    .product__img {
+      position: relative;
+      width: 362px;
+      height: 232px;
+    }
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .product__item {
+        position: relative;
+        height: 475px;
+        margin-bottom: 117px;
+      }
+      .product__info {
+        font-size: 15px;
+        color: #7e7e7e;
+        margin-left: 30px;
+      }
+      .lnr-clock {
+        min-width: 182px;
+        color: $color-blue;
+        margin-right: 8px;
+      }
+      .product__wrapper {
+        .product__bubble {
+          color: #7e7e7e;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+      .product__eye {
+        color: #7e7e7e;
+        border: none;
+        background-color: transparent;
+        margin-right: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+  // end blog

@@ -1,0 +1,95 @@
+// Pricing Plan
+.pricing-plan {
+  background-color: #eff1f5;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    width: 360px;
+    font-size: 16px;
+    color: $color-grey;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding: 30px;
+    margin-bottom: 120px;
+  }
+  &__title--yellow {
+    border-top: 3px solid #feb71d;
+  }
+  &__title--pink {
+    border-top: 3px solid #ff6a6c;
+  }
+  &__title--blue {
+    border-top: 3px solid $color-blue;
+  }
+  &__caption {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+    border-bottom: 1px solid #e8ebf0;
+    padding-bottom: 30px;
+  }
+  &__price {
+    text-align: center;
+    font-size: 36px;
+    color: #000;
+    margin: 30px 0 20px;
+    span {
+      color: $color-grey;
+      font-size: 16px;
+    }
+  }
+  &__list {
+    padding: 16px;
+    line-height: 36px;
+  }
+  &__color-text {
+    color: #000;
+    font-weight: 800;
+  }
+  &__link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 18px 79px;
+    border-radius: 4px;
+  }
+  &__link--pink {
+    background-color: #ff6a6c;
+    transition: 0.5s;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #ff6a6c;
+      background-color: #fff;
+      border: 1px solid #ff6a6c;
+      transition: 0.5s;
+    }
+  }
+  &__link--blue {
+    background-color: $color-blue;
+    transition: 0.5s;
+    &:hover,
+    &:active,
+    &:focus {
+      color:  $color-blue;
+      background-color: #fff;
+      border: 1px solid  $color-blue;
+      transition: 0.5s;
+    }
+  }
+  &__link--yellow {
+    background-color: #feb71d;
+    transition: 0.5s;
+    &:hover,
+    &:active,
+    &:focus {
+      color:  #feb71d;
+      background-color: #fff;
+      border: 1px solid  #feb71d;
+      transition: 0.5s;
+    }
+  }
+}
